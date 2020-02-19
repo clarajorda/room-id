@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Booking
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.booking.com/hotel/*
