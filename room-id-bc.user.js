@@ -19,7 +19,7 @@
 
         $('div.room-info').each(function( index, value ) {
             var roomid = $(value).attr("id");
-            // roomid = roomid.replace('RD','');
+            roomid = roomid.replace('RD','');
             $('a', value).after(' <b>RoomID = ' + roomid + '</b>');
         });
     });
