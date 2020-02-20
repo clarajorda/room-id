@@ -16,11 +16,10 @@
     $(document).ready(function() {
         console.log('ready...');
 
-        $('tbody.room').each(function( index, value ) {
-            const roomid = $(value).data('room-code');
-
-            $('tr > th', value).append('<b>' + roomid + '</b>');
-            $('h3.room-name', value).append(', <b>RoomID = ' + roomid + '</b>');
+        $$('a.room-rate-dialog-trigger__btn').each(function( index, value ) {
+            const link= $(value).data('href');
+	    const roomdid = link.split('=')[1].split('-')[1];
+            $(value).after(', <b>RoomID = ' + roomid + '</b>');
         });
     });
 })();
